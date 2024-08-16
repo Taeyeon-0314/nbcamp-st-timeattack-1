@@ -47,21 +47,25 @@ const FormTag = ({ countries, setCountries }) => {
   };
   return (
     <form onSubmit={addCountry}>
+      <label>국가이름</label>
       <input
         type="text"
         value={country}
         onChange={(event) => setCountry(event.target.value)}
       ></input>
+      <label>금메달</label>
       <input
         type="text"
         value={gold}
         onChange={(event) => setGold(event.target.value)}
       ></input>
+      <label>은메달</label>
       <input
         type="text"
         value={silver}
         onChange={(event) => setSilver(event.target.value)}
       ></input>
+      <label>동메달</label>
       <input
         type="text"
         value={bronze}
